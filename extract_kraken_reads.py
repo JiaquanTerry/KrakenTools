@@ -197,6 +197,7 @@ def main():
             if taxid == '1':
                 root_node = Tree(taxid, level_num, level_type)
                 prev_node = root_node
+                global prev_node
                 #save if needed
                 if taxid in save_taxids:
                     base_nodes[taxid] = root_node
